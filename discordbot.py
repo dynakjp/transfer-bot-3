@@ -26,7 +26,7 @@ async def on_message(message):
         return
     
     
-    if message.content == '/here to':
+    if message.content == '/m here to':
         await message.channel.send('ここが送信元!送信先を教えてね！')
         wait_message=await client.wait_for("message",check=check)
         CID=int(wait_message.content)
